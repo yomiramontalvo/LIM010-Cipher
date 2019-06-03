@@ -42,12 +42,13 @@ La necesidad que se pudo ver en los usuarios fue la de hacer más interactivo el
 Sin embargo cada vez, la forma de darse el juego ha ido variando, y centrandose en solo ofrecer el regalo. Por ello se ofrece esta nueva opción de hacer una interacción mayor entre los miembros de la comunidad que lo jugará. 
 Otra necesidad que se pudo detectar es que quien recibe los obsequios no siempre le agradan estos, por eso esto podría ser una nueva forma de dar pistas de posibles regalos que quisiera recibir a quien es el amigo secreto, para que este pueda considerarlo.
 ## PRIMER PROTOTIPO EN PAPEL Y LAPIZ
+![image](https://user-images.githubusercontent.com/51206472/58830620-5975c580-8610-11e9-9022-a46b4e4b701e.png)
 
-![image](https://user-images.githubusercontent.com/51206472/58822045-29242c00-85fc-11e9-9436-f74d961d74d0.png)
+![image](https://user-images.githubusercontent.com/51206472/58830674-727e7680-8610-11e9-99c3-bf25ce6393cd.png)
 
-![image](https://user-images.githubusercontent.com/51206472/58821914-c599fe80-85fb-11e9-9ea8-573375e4f585.png)
+![image](https://user-images.githubusercontent.com/51206472/58830705-85914680-8610-11e9-887e-6a2464e629fb.png)
 
-![image](https://user-images.githubusercontent.com/51206472/58823421-43abd480-85ff-11e9-8abc-f6248a825b1a.png)
+![image](https://user-images.githubusercontent.com/51206472/58830733-99d54380-8610-11e9-914f-2d61fe30a3c4.png)
 
 
 ## FEEDBACK
