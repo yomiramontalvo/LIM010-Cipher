@@ -17,6 +17,7 @@
 ## Preámbulo
 El amigo secreto, Santa secreto, amigo invisible o angelito es un juego muy popular en el que participan varias personas que se hacen regalos entre sí sin saber quién ha sido el que ha hecho cada regalo. Alternativamente, los amigos secretos pueden enviar cartas anónimas a sus correspondientes amigos, utilizando seudónimos. En estas cartas expresan lo que sienten y piensan acerca de su compañero de juego y a la vez comentan siempre algo de ellos mismos con el fin de dar pistas sobre su identidad.
 ![caeser-cipher](https://muchosidad.files.wordpress.com/2010/12/amigo-secreto.jpg)
+![image](https://user-images.githubusercontent.com/51206472/58819099-1823ec80-85f5-11e9-824e-dfd6b0bb1b0c.png)
 
 ## Título del proyecto
 
