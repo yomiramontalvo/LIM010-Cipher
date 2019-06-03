@@ -17,12 +17,13 @@
 ## Preámbulo
 El amigo secreto, Santa secreto, amigo invisible o angelito es un juego muy popular en el que participan varias personas que se hacen regalos entre sí sin saber quién ha sido el que ha hecho cada regalo. Alternativamente, los amigos secretos pueden enviar cartas anónimas a sus correspondientes amigos, utilizando seudónimos. En estas cartas expresan lo que sienten y piensan acerca de su compañero de juego y a la vez comentan siempre algo de ellos mismos con el fin de dar pistas sobre su identidad.
 
-![caeser-cipher](https://muchosidad.files.wordpress.com/2010/12/amigo-secreto.jpg)
+  ![caeser-cipher](https://muchosidad.files.wordpress.com/2010/12/amigo-secreto.jpg)
 
 ## Título del proyecto
 
 Secret Friend, la forma más divertida de jugar al amigo secreto.
-![image](https://user-images.githubusercontent.com/51206472/58820623-b5cceb00-85f8-11e9-867b-7913e0cccc3e.png)
+
+   ![image](https://user-images.githubusercontent.com/51206472/58820623-b5cceb00-85f8-11e9-867b-7913e0cccc3e.png)
 
 
 ## resumen
@@ -41,6 +42,10 @@ La necesidad que se pudo ver en los usuarios fue la de hacer más interactivo el
 Sin embargo cada vez, la forma de darse el juego ha ido variando, y centrandose en solo ofrecer el regalo. Por ello se ofrece esta nueva opción de hacer una interacción mayor entre los miembros de la comunidad que lo jugará. 
 Otra necesidad que se pudo detectar es que quien recibe los obsequios no siempre le agradan estos, por eso esto podría ser una nueva forma de dar pistas de posibles regalos que quisiera recibir a quien es el amigo secreto, para que este pueda considerarlo.
 ## PRIMER PROTOTIPO EN PAPEL Y LAPIZ
+
+
+
+
 
 ## FEEDBACK
 ## PROTOTIPO FINAL EN BALSAMIC
