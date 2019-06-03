@@ -43,9 +43,21 @@ Sin embargo cada vez, la forma de darse el juego ha ido variando, y centrandose 
 Otra necesidad que se pudo detectar es que quien recibe los obsequios no siempre le agradan estos, por eso esto podría ser una nueva forma de dar pistas de posibles regalos que quisiera recibir a quien es el amigo secreto, para que este pueda considerarlo.
 ## PRIMER PROTOTIPO EN PAPEL Y LAPIZ
 
+![image](https://user-images.githubusercontent.com/51206472/58822045-29242c00-85fc-11e9-9436-f74d961d74d0.png)
 
+![image](https://user-images.githubusercontent.com/51206472/58821914-c599fe80-85fb-11e9-9ea8-573375e4f585.png)
 
+![image](https://user-images.githubusercontent.com/51206472/58823421-43abd480-85ff-11e9-8abc-f6248a825b1a.png)
 
 
 ## FEEDBACK
+-Una de las primeras cosas que pude recolectar del feedback con mis compañeras fue de que debía quitar frases como ¡Cada vez estás más cerca! y estás a un paso de lograrlo, ya que daba la impresión de tener muchos pasos o ser muy extenso.
+-El ingreso del nombre debe ejecutarse después de la contraseña LABORATORIA, ya que si no supiera la contraseña, entonces el ingreso del nombre no sería utilizado y alargaría el proceso de decirle que no podrá jugar. 
+-Cambiar “ingrese nombre secreto” a solo “ingrese nombre” ya que el usuario podría confundirse y pensar que la palabra a descifrar sería su nombre.
+-Es mejor separar las pantallas de cifrado y descifrado, también agregar la opción de regresar a pasos anteriores, y de salir de la página.
+
+Este feedback que realicé con 7 personas me ayudó a estructurar mejor el tema, a definir las variables que consideraré y que el usuario pueda comprender mejor la webapp. A continuación subiré el último prototipo a papel y lápiz que idee.
+
+
+
 ## PROTOTIPO FINAL EN BALSAMIC
