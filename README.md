@@ -1,4 +1,4 @@
-# Cifrado César
+# SECRET FRIEND-YOMIRA MONTALVO
 
 ## Índice
 
@@ -35,6 +35,7 @@ Mi proyecto consiste en mejorar la experiencia de jugar “amigo secreto” de u
 ## Investigación UX
   ## USUARIOS
 La necesidad que se pudo ver en los usuarios fue la de hacer más interactivo el Juego del amigo secreto, ya que este ha dejado de ser como tal en el transcurso del tiempo, Este juego consiste en descubrir a la persona que  va a obsequiar un regalo a través de pistas que esta pudiera dejar en lugares cercanos a quien lo reciba. 
+
 Sin embargo cada vez, la forma de darse el juego ha ido variando, y centrandose en solo ofrecer el regalo. Por ello se ofrece esta nueva opción de hacer una interacción mayor entre los miembros de la comunidad que lo jugará. 
 Otra necesidad que se pudo detectar es que quien recibe los obsequios no siempre le agradan estos, por eso esto podría ser una nueva forma de dar pistas de posibles regalos que quisiera recibir a quien es el amigo secreto, para que este pueda considerarlo.
  ## SECRET FRIEND SOLUCIONA PROBLEMAS
@@ -42,6 +43,29 @@ La necesidad que se pudo ver en los usuarios fue la de hacer más interactivo el
 Sin embargo cada vez, la forma de darse el juego ha ido variando, y centrandose en solo ofrecer el regalo. Por ello se ofrece esta nueva opción de hacer una interacción mayor entre los miembros de la comunidad que lo jugará. 
 Otra necesidad que se pudo detectar es que quien recibe los obsequios no siempre le agradan estos, por eso esto podría ser una nueva forma de dar pistas de posibles regalos que quisiera recibir a quien es el amigo secreto, para que este pueda considerarlo.
 ## PRIMER PROTOTIPO EN PAPEL Y LAPIZ
+
+![image](https://user-images.githubusercontent.com/51206472/58831181-b58d1980-8611-11e9-94fd-5dee6e023e6e.png)
+
+![image](https://user-images.githubusercontent.com/51206472/58831191-bc1b9100-8611-11e9-9ae5-6102b8cf15de.png)
+
+![image](https://user-images.githubusercontent.com/51206472/58831203-c5a4f900-8611-11e9-9580-c16e8e2ab3a5.png)
+
+
+## FEEDBACK
+-Una de las primeras cosas que pude recolectar del feedback con mis compañeras fue de que debía quitar frases como ¡Cada vez estás más cerca! y estás a un paso de lograrlo, ya que daba la impresión de tener muchos pasos o ser muy extenso.
+
+-El ingreso del nombre debe ejecutarse después de la contraseña LABORATORIA, ya que si no supiera la contraseña, entonces el ingreso del nombre no sería utilizado y alargaría el proceso de decirle que no podrá jugar. 
+
+-Cambiar “ingrese nombre secreto” a solo “ingrese nombre” ya que el usuario podría confundirse y pensar que la palabra a descifrar sería su nombre.
+
+-Es mejor separar las pantallas de cifrado y descifrado, también agregar la opción de regresar a pasos anteriores, y de salir de la página.
+
+
+Este feedback que realicé con 7 personas me ayudó a estructurar mejor el tema, a definir las variables que consideraré y que el usuario pueda comprender mejor la webapp. A continuación subiré el último prototipo a papel y lápiz que idee.
+
+
+
+## PROTOTIPO FINAL EN BALSAMIC
 ![image](https://user-images.githubusercontent.com/51206472/58830620-5975c580-8610-11e9-9022-a46b4e4b701e.png)
 
 ![image](https://user-images.githubusercontent.com/51206472/58830674-727e7680-8610-11e9-99c3-bf25ce6393cd.png)
@@ -49,16 +73,3 @@ Otra necesidad que se pudo detectar es que quien recibe los obsequios no siempre
 ![image](https://user-images.githubusercontent.com/51206472/58830705-85914680-8610-11e9-887e-6a2464e629fb.png)
 
 ![image](https://user-images.githubusercontent.com/51206472/58830733-99d54380-8610-11e9-914f-2d61fe30a3c4.png)
-
-
-## FEEDBACK
--Una de las primeras cosas que pude recolectar del feedback con mis compañeras fue de que debía quitar frases como ¡Cada vez estás más cerca! y estás a un paso de lograrlo, ya que daba la impresión de tener muchos pasos o ser muy extenso.
--El ingreso del nombre debe ejecutarse después de la contraseña LABORATORIA, ya que si no supiera la contraseña, entonces el ingreso del nombre no sería utilizado y alargaría el proceso de decirle que no podrá jugar. 
--Cambiar “ingrese nombre secreto” a solo “ingrese nombre” ya que el usuario podría confundirse y pensar que la palabra a descifrar sería su nombre.
--Es mejor separar las pantallas de cifrado y descifrado, también agregar la opción de regresar a pasos anteriores, y de salir de la página.
-
-Este feedback que realicé con 7 personas me ayudó a estructurar mejor el tema, a definir las variables que consideraré y que el usuario pueda comprender mejor la webapp. A continuación subiré el último prototipo a papel y lápiz que idee.
-
-
-
-## PROTOTIPO FINAL EN BALSAMIC
