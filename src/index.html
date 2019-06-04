@@ -1,14 +1,108 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<html lang="es"> <!-- Para el idioma -->
+<head>
+	<meta charset="UTF-8"> <!-- Sirve para el header, como se vera -->
+	<link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Carme" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Leckerli+One&display=swap" rel="stylesheet">
+
+    <title>¡LaGranTriviada!</title>
+</head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header><div class="wrapper">
+      <div class="logo">Secret Friend</div>
+  </div></header>
+    <main>
+      <section id="boton1" class="fondo1 wrapper" > <!-- para centrar contenido-->
+         <h1  class="titulo1 ">¡La forma más divertida de jugar al amigo secreto! </h1><br/>
+         <h3>Ingresa la clave de tu comunidad</h3><br/>
+         <section class="wrapper1">
+         <input type="text" id="contraseña"/>
+         <button type="button"  id="btn">GO</button><br/>
+         <p id="intentos"></p><br/>
+         </section>
+      </section>
+      <section id="boton2"  class="fondo1 wrapper ocultar">
+        <h1  class="titulo2 ">¡Empecemos el juego ! </h1><br>
+        <h3>Ingresa tu nombre</h3><br/>
+        <section class="wrapper1">
+          <input type="text" id="nombre"/>
+          <button type="button"  id="btn1">GO</button><br/>
+          <p id="sinnombre"></p><br/>
+        </section>
+      </section>   
+
+    <section id="boton3" class=" fondo2 wrapper ocultar">
+        <h1 class="titulo3" id="escogeropcion">Genial! ...</h1><br/>
+        <h1 class= "titulo2">Escoge una opción </h1><br/>
+       <section class="escoger">
+         <button  type ="button" id="btn2">Descifra las pistas</button><br/>
+       </section>
+       <section class="escoger">
+        <button  type ="button" id="btn3">Oculta tus pistas</button><br/>
+       </section>
+    </section>
+
+
+
+
+    <section id="boton4" class=" fondo2 contenido wrapper ocultar">
+            <h1 class="titulo1">ACERCA DE : LITERATURA</h1>
+            <h3 class= " wrapper">Responde todas las preguntas </h3>
+
+
+        </section>
+        <section id="boton5" class=" fondo2 contenido wrapper ocultar">
+                <h1 class="titulo1">ACERCA DE : CULTURA</h1>
+                <h3 class= " wrapper">Responde todas las preguntas </h3>
+                <div style= background-color:#7FFFD4 class="titulo2 wrapper opciones"> <h>Río más largo del mundo</h>
+                  <form  action="" method=""  name="formulario1"  >
+                <ul>
+                   <li class="preg wrapper"><label><input type="radio" name="opcion5" value="correcto"/>a)Amazonas</label></li> 
+                   <li class="preg wrapper"><label><input type="radio" name="opcion5" value="incorrecta"/>b)Río Nilo</label></li>   
+                   <li class="preg wrapper"><label><input type="radio" name="opcion5" value="incorrecta"/>c)Río Amarillo</label></li>  
+                   <li class="preg wrapper"><label><input type="radio" name="opcion5" value="incorrecta"/>d)Río Mekong</label></li> 
+                  </ul> 
+                </form>
+                </div>
+                <div style= background-color:#AFEEEE class="titulo2 wrapper opciones"> <h>Quién pintó la última cena</h>
+                  <form action="" method="" name="formulario2">
+                        <ul>
+                    <li class="preg wrapper"><label><input type="radio" name="opcion6" value="incorrecta"/>a)Van gogh</label></li> 
+                    <li class="preg wrapper"><label><input type="radio" name="opcion6" value="correcto"/>b)Leonardo Da Vinci</label></li>  
+                    <li class="preg wrapper"><label><input type="radio" name="opcion6" value="incorrecta"/>c)Picasso</label></li> 
+                    <li class="preg wrapper"><label><input type="radio" name="opcion6" value="incorrecta"/>d)Salvador Dalí</label></li> 
+                          </ul>
+                </form> 
+          <h3 class=" wrapper "><input type="button"  name="btn"  value="Enviar" onclick="return dar_enviar2(), mostrarpantalla8()"></h3>
+                        </div>   
+        </section>
+
+    <section id="boton6" class="wrapper ocultar">
+       
+        <div class="titulo1 fondo1"><h1 id="res1">Respuestas</h1>
+        <h1 class="titulo3"> <input type="button"  value="Volver a inicio" onclick="mostrarpantalla2()"></div>
+
+    </section>
+    <section id="boton7" class="wrapper ocultar">
+       
+      <div class="titulo1 fondo1"><h1 id="res2">Respuestas</h1>
+      <h1 class="titulo3"> <input type="button"   value="Volver a inicio" onclick="mostrarpantalla2()"></div>
+
+  </section>
+  <section id="boton8" class="wrapper ocultar">
+       
+    <div class="titulo1 fondo1"><h1 id="res3">Respuestas</h1>
+    <h1 class="titulo3"> <input type="button"   value="Volver a inicio" onclick="mostrarpantalla2()"></div>
+
+</section>
+    </main>
+    <footer>Derechos reservados Yomira</footer>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>

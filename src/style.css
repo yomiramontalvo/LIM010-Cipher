@@ -1,1 +1,124 @@
 /* Acá van tus reglas de estilo */
+*{margin: 0; padding: 0} /*quitar margenes que dan por defecto el navegador*/
+header{
+  width: 100%; /*anchura de elementos de bloque*/
+  overflow: hidden; /* permite tener float*/
+  background: #008080;
+  margin-bottom: 20px;
+}
+.wrapper{         /*para centrar el contenido*/
+  width: 90%;
+  max-width: 1000px;
+  margin:auto;
+  overflow:hidden;
+}
+.wrapper1{         /*para centrar el contenido*/
+  width: 30%;
+  max-width: 1000px;
+  margin:auto;
+  overflow:hidden;
+}
+header .logo {
+  color: #F5F5F5;
+  font-size: 80px;
+  line-height: 200px; /*estar a altura de 200px*/
+  float:left;
+  font-family: 'Pacifico';
+}
+
+.escoger {
+  color: #3CBC8D;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+  font-size: 30px; 
+}
+.ocultar{
+  display: none;
+}
+.mostrar{
+  display: block;
+}
+
+  .contenido p{
+    margin-bottom: 1em;
+  }
+@media screen and (max-width:950px){  /* para que se centre y se acomode bien en dispositivos mobiles o cuando reduzca*/
+  header .logo,
+  header nav {
+    width: 100%;
+    text-align: center;
+    line-height:100px;
+  }
+}
+.titulo1{
+  color:  #008080;
+  font-family: 'Fredoka One', cursive;
+  font-family: 'Leckerli One', cursive;
+  font-size: 50px; 
+  text-align: center;
+}
+.titulo3{
+  color:  #FF7F50;
+  font-family: 'Fredoka One', cursive;
+  font-family: 'Leckerli One', cursive;
+  font-size: 70px; 
+  text-align: center;
+}
+.titulo2 {
+  color: #CD5C5C;
+  font-family: 'Fredoka One', cursive;
+  font-family: 'Leckerli One', cursive;
+  font-size: 55px; 
+  text-align: center
+}
+.fondo1 {
+  background:#FFDAB9;
+  border-radius: 72px 72px 72px 72px;
+  -moz-border-radius: 72px 72px 72px 72px;
+  webkit-border-radius: 72px 72px 72px 72px ;
+  border: 20px solid #808080;
+}
+.fondo2 {
+  background:#FFDAB9 ;
+  border-radius: 72px 72px 72px 72px;
+  -moz-border-radius: 72px 72px 72px 72px;
+  webkit-border-radius: 72px 72px 72px 72px ;
+  border: 20px solid #20B2AA;
+}
+.opciones{
+  border-radius:60px 60px 60px 60px;
+  -moz-border-radius:60px 60px 60px 60px;
+  webkit-border-radius:60px 60px 60px 60px;
+  border: 3px solid #20B2AA;
+}
+
+.opciones1{
+  padding: 3px 10px;
+  border: PowderBlue 5px dashed;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+h3{
+	color: #FF7F50;
+font-family:'Gochi Hand', cursive;
+  font-size: 30px;
+  text-align: center;
+}
+.preg {
+  color: black;
+  font-family: font-family: 'Carme', sans-serif;
+  font-size: 30px; 
+}
+h2{
+	color: black;
+font-family: font-family: 'Carme', sans-serif;
+  font-size: 40px;
+}
+input[type=text] {
+    background-color: #3CBC8D;
+    color: white;
+    border-radius:60px 60px 60px 60px;
+    -moz-border-radius:60px 60px 60px 60px;
+    webkit-border-radius:60px 60px 60px 60px;
+
+  }
