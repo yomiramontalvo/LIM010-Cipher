@@ -1,16 +1,18 @@
 /* Acá va tu código */
+let pantalla1 = document.getElementById('boton1');
+let pantalla2 = document.getElementById('boton2');
 const botoncontraseña = document.getElementById('btn');
 let valcontra = document.getElementById('contraseña');
 const botonnombre = document.getElementById('btn1');
 let valnombre = document.getElementById('nombre');
 const botondescifra = document.getElementById('btn2');
 const botoncifra = document.getElementById('btn3');
+const validarpista = document.getElementById('btn4');
+
 
 
 let inicio = document.getElementById('inicio');
 let resultado = document.getElementById('resultado');
-let pantalla1 = document.getElementById('boton1');
-let pantalla2 = document.getElementById('boton2');
 let pantalla3 = document.getElementById('boton3');
 let pantalla4 = document.getElementById('boton4');
 let pantalla5 = document.getElementById('boton5');
@@ -42,12 +44,6 @@ function mostrarpantalla1() {
   ocultar1();
   pantalla1.classList.add('mostrar');
 }
-function mostrarpantallasaludo() {
-  ocultar1();
-  const n=llamar.value;
-  document.getElementById('saludo').innerHTML="Hola! "+ n+" bienvenida(o)" ;
-  pantallasaludo.classList.add('mostrar');
-}
 function mostrarpantalla2() {
   ocultar1();
   pantalla2.classList.add('mostrar');
@@ -76,94 +72,71 @@ function mostrarpantalla8() {
   ocultar1();
   pantalla8.classList.add('mostrar');
 }
-
-function dar_enviar() {
-  let correctas = 0;
-  let opciones1 = document.getElementsByName("opcion1");
-  let opciones2 = document.getElementsByName("opcion2");
-  for (let i = 0; i < opciones1.length; i++) {
-    if (opciones1[i].checked) {
-      if (opciones1[i].value === 'correcto')
-        correctas++;
-    }
-  }
-  for (let i = 0; i < opciones2.length; i++) {
-    if (opciones2[i].checked) {
-      if (opciones2[i].value === 'correcto')
-        correctas++;
-    }
-  }
-  console.log(correctas);
-  let m=correctas;
-  const n=llamar.value;
-  document.getElementById('res1').innerHTML=n+"! Obtuvistes "+ m+" respuesta(s) correctas" ; 
-}
-function dar_enviar1() {
-  let correctas = 0;
-  let opciones3 = document.getElementsByName("opcion3");
-  let opciones4 = document.getElementsByName("opcion4");
-  for (let i = 0; i < opciones3.length; i++) {
-    if (opciones3[i].checked) {
-      if (opciones3[i].value === 'correcto')
-        correctas++;
-    }
-  }
-  for (let i = 0; i < opciones4.length; i++) {
-    if (opciones4[i].checked) {
-      if (opciones4[i].value === 'correcto')
-        correctas++;
-    }
-  }
-  console.log(correctas);
-  let m=correctas;
-  const n=llamar.value;
-  document.getElementById('res2').innerHTML=n+"! Obtuvistes "+ m+" respuesta(s) correctas" ;  
-}
-function dar_enviar2() {
-  let correctas = 0;
-  let opciones5 = document.getElementsByName("opcion5");
-  let opciones6 = document.getElementsByName("opcion6");
-  for (let i = 0; i < opciones5.length; i++) {
-    if (opciones5[i].checked) {
-      if (opciones5[i].value === 'correcto')
-        correctas++;
-    }
-  }
-  for (let i = 0; i < opciones6.length; i++) {
-    if (opciones6[i].checked) {
-      if (opciones6[i].value === 'correcto')
-        correctas++;
-    }
-  }
-  console.log(correctas);
-  let m=correctas;
-  const n=llamar.value;
-  document.getElementById('res3').innerHTML=n+"! Obtuvistes "+ m+" respuesta(s) correctas" ; 
-}
-
 let i=0;
+/* Validando contraseña LABORATORIA */
 btn.addEventListener('click',() => { 
     let n=contraseña.value;
     if(n=="LABORATORIA")
     { mostrarpantalla2();
     } 
     if(i>1)
-     { mostrarpantalla10();   
+     { mostrarpantalla8();   
      }
      else {
       i++;   
       contraseña.value='';document.getElementById('intentos').innerHTML="Tienes solo 3 intentos";
     }      
 });
+
+function soloLetras(e){
+  key = e.keyCode || e.which;
+  tecla = String.fromCharCode(key).toLowerCase();
+  letras = " áéíóúabcdefghijklmnñopqrstuvwxyz";
+  especiales = "8-37-39-46";
+
+  tecla_especial = false
+  for(var i in especiales){
+       if(key == especiales[i]){
+           tecla_especial = true;
+           break;
+       }
+   }
+
+   if(letras.indexOf(tecla)==-1 && !tecla_especial){
+       return false;
+   }
+};
+
+
+
+/* Ingresa nombre y muestra interaccion en pantalla 3 */
 btn1.addEventListener('click',() => { 
     let m=nombre.value;
     document.getElementById('escogeropcion').innerHTML="¡Genial "+m+ " !";
-    mostrarpantalla3();
-          
+    mostrarpantalla3();     
 });
+
+/* Mostrar pantalla de descifrado */
 btn2.addEventListener('click',() => { 
     mostrarpantalla4();         
 });
+
+
+/* Mostrar pantalla de ingreso de numero para descifrar */
 btn3.addEventListener('click',() => { 
     mostrarpantalla5();         
+});
+
+btn4.addEventListener('click',() => { 
+  let n=descpista.value;
+  if(n=="LABORATORIA")
+  { mostrarpantalla2();
+  } 
+  if(i>1)
+   { mostrarpantalla8();   
+   }
+   else {
+    i++;   
+    contraseña.value='';document.getElementById('intentos').innerHTML="Tienes solo 3 intentos";
+  }      
 });

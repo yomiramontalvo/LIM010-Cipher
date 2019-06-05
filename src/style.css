@@ -64,6 +64,13 @@ header .logo {
   font-size: 70px; 
   text-align: center;
 }
+.titulo4{
+  color:  #FF7F50;
+  font-family: 'Fredoka One', cursive;
+  font-family: 'Leckerli One', cursive;
+  font-size: 40px; 
+  text-align: center;
+}
 .titulo2 {
   color: #CD5C5C;
   font-family: 'Fredoka One', cursive;
