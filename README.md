@@ -108,7 +108,7 @@ En la pantalla 6 se muestra la pista ya descifrada y se hace la consulta de si s
 
 En la pantalla 7 se deberá ingresar la pista que se quiere ocultar y dar en NEXT, esta pista deberá contener solo letras, por ello se hizo un algoritmo en JS para garantizar eso. Se continuará a la pantalla 8 en donde se mostrará la pista a ocultar para verificar y si no coincide se deberá pulsar el botón atrás. En esta misma pantalla se ingresará el número secreto que será validado por un algoritmo en JS, y finalmente se dará en la opción de ocultar pista.
 
-![image](https://user-images.githubusercontent.com/51206472/58928821-b9a45e80-8719-11e9-8b89-d4953bb8b9d7.png)
+![image](https://user-images.githubusercontent.com/51206472/58929937-fe7ec400-871e-11e9-8c19-ad441bead8fd.png)
 
 *En la pantalla 9 se muestra la pista que fue ocultada y luego se podrá pulsar el botón de VOLVER A JUGAR o de lo contrario de ME VOY, que se muestra en la pantalla 10, quiere decir que al pulsar ME VOY dirigirá automáticamente a GOOGLE. En la pantalla 1, se vió que había un botón de INSTRUCCIONES DEL JUEGO, que direccionará a la pantalla 11 donde también se encuentra el botón JUGAR que llevará a la pantalla 2. Por último en la pantalla 12 se muestra que se agotaron los 3 intentos de ingreso de contraseña realizados en la pantalla 2.
 
