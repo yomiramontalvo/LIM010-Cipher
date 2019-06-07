@@ -6,11 +6,11 @@
     <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Carme" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
+   <link rel="icon" type="image.jpg" href=>
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Leckerli+One&display=swap" rel="stylesheet">
-
     <title>SecretFriend</title>
 </head>
   <body>
@@ -51,24 +51,43 @@
        </section>
     </section>
       <!-- Pantalla 4 -->
-    <section id="boton4" class=" fondo2 contenido wrapper ocultar">
-            <h1 class="titulo1">Descifra las pistas de tu amigo secreto</h1><br/>
-            <h3>Ingresa la pista que encontraste</h3><br/>
+   
+      <section id="boton4" class="fondo2 contenido wrapper ocultar">
+            <h1 class="titulo1">Ocultar tus pistas:</h1><br/>
+            <label class="titulo4" for="texto"> Ingresa la pista que encontraste</label><br/>
             <section class="wrapper1">
-            <input type="text" id="descpista" onkeypress="return soloLetras(event)" /><br/>
-            <button type="button" class="wrapper1"  id="btn4">NEXT</button><br/><br/>
+            <textarea type="text" name="texto" id="texto" onkeypress="return soloLetras(event)" ></textarea><br/>
           </section>
-     </section>
 
-      <!-- Pantalla 5 -->
-    <section id="boton4" class=" fondo1  wrapper ocultar">
-          <h1 class="titulo2">¡Ocultaron la pista!...</h1>
+        <label  class="titulo4" for="desplazamiento"> Número secreto</label><br/>
+        <section class="wrapper1">
+        <input type="range" min="1" max="25" step="1" value="1" id="desplazamiento" name="desplazamiento" ><br/>
+       </section>
+
+       <label class= "titulo1" for="cifrado">pista descifrada:</label>
+       <textarea type="text" name="cifrado" id="cifrado" disabled="disabled"></textarea>
+   <section>
+       <button type="button" class="wrapper1"  id="btn4">NEXT</button><br/><br/>
+      </section>
+      </section>
+
+    <section id="boton5" class=" fondo1  wrapper ocultar">
+          <h1 class="titulo2"></h1><br/>
           <h3>....</h3><br/>
           <section class="wrapper1">
-          <input type="text" id="descpista" onkeypress="return soloLetras(event)" /><br/>
-          <button type="button" class="wrapper1"  id="btn4">NEXT</button><br/><br/>
+          <button type="button" class="wrapper1"  id="btn5">NEXT</button><br/><br/>
         </section>
-   </section>   
+    </section>   
+
+
+
+    
+ 
+    <section id="boton6" class=" fondo1  wrapper ocultar">
+      <h1 class="titulo2">La pista es :</h1><br/>
+      <h3 id="descifradopis">....</h3><br/>
+     
+    </section>
 
 
 
@@ -86,13 +105,13 @@
       <h1 class="titulo3"> <input type="button"   value="Volver a inicio" onclick="mostrarpantalla2()"></div>
 
   </section>
-  <!-- Pantalla 8(agoto 3 intentos) -->
+ 
    <section id="boton8" class="wrapper fondo2 ocultar">
       <h1  class="titulo2 ">Ups :( </h1><br>
       <h1  class="titulo4 ">Agotaste tus 3 intentos ... </h1><br>
       <h1  class="titulo4 ">Si quieres intentarlo denuevo </h1><br>
       <h1  class="titulo1 ">¡Refresca! </h1><br>    
-   </section>
+   </section> 
     </main>
     <footer>Derechos reservados Yomira</footer>
     <script src="cipher.js"></script>

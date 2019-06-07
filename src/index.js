@@ -10,7 +10,6 @@ const botoncifra = document.getElementById('btn3');
 const validarpista = document.getElementById('btn4');
 
 
-
 let inicio = document.getElementById('inicio');
 let resultado = document.getElementById('resultado');
 let pantalla3 = document.getElementById('boton3');
@@ -106,6 +105,36 @@ function soloLetras(e){
        return false;
    }
 };
+const desplazamiento = document.getElementById("desplazamiento");
+const texto = document.getElementById("texto");
+const textoCifrado = document.getElementById("cifrado");
+
+function cifrado(){
+	const textoIngresado = texto.value;
+	textoCifrado.value = textoIngresado.split('').map(c=>{
+		let mayus = (c === c.toUpperCase()) ? true : false;
+		let valorEntero = c.toLowerCase().charCodeAt(0);
+		if(valorEntero >= 97 && valorEntero <= 122)
+			{
+				const valorDesplazamiento = parseInt(desplazamiento.value);
+				
+				if(valorEntero + valorDesplazamiento > 122)
+					valorEntero = 97 + (valorEntero - 122) + valorDesplazamiento - 1;
+				else
+					valorEntero = valorEntero + valorDesplazamiento;
+			}
+	
+			let cifrado = String.fromCharCode(valorEntero);
+			return mayus ? cifrado.toUpperCase() : cifrado;
+		}).join('');
+}
+
+texto.addEventListener("keyup",cifrado);
+desplazamiento.addEventListener("change", cifrado);
+
+
+
+
 
 
 
@@ -124,19 +153,10 @@ btn2.addEventListener('click',() => {
 
 /* Mostrar pantalla de ingreso de numero para descifrar */
 btn3.addEventListener('click',() => { 
-    mostrarpantalla5();         
+    mostrarpantalla4();         
 });
 
 btn4.addEventListener('click',() => { 
-  let n=descpista.value;
-  if(n=="LABORATORIA")
-  { mostrarpantalla2();
-  } 
-  if(i>1)
-   { mostrarpantalla8();   
-   }
-   else {
-    i++;   
-    contraseña.value='';document.getElementById('intentos').innerHTML="Tienes solo 3 intentos";
-  }      
+ mostrarpantalla5(); 
 });
+
