@@ -96,19 +96,16 @@ Este feedback que realicé con 7 personas me ayudó a estructurar mejor el tema,
 
 
 ## PROTOTIPO FINAL EN BALSAMIC
-![image](https://user-images.githubusercontent.com/51206472/58830620-5975c580-8610-11e9-9022-a46b4e4b701e.png)
+![image](https://user-images.githubusercontent.com/51206472/59082418-9cf25d00-88b8-11e9-8ddb-72571981666c.png)
 
-*Como se puede observar en la primera pantalla se debe insertar la contraseña, que debe ser LABORATORIA, para continuar a la segunda e insertar el nombre, luego se da en GO, para ir a la tercera pantalla donde se podrá escoger la opción de ocultar una pista para dejarla al amigo secreto o descifrar una pista dejada por el amigo secreto. Si se escoge la opción de descifrar pistas se continuará a la pantalla 4 en donde se ingresará la pista a descifrar, cabe resaltar que solo se permitirá el ingreso de letras no de números con un algoritmo en JS, se continúa con NEXT para ir a la siguiente pantalla 5.
 
-![image](https://user-images.githubusercontent.com/51206472/58830674-727e7680-8610-11e9-99c3-bf25ce6393cd.png)
+*Como se puede observar en la primera pantalla se debe insertar la contraseña, que debe ser LABORATORIA, para continuar a la segunda e insertar el nombre, luego se da en GO, para ir a la tercera pantalla donde se podrá escoger la opción de ocultar una pista para dejarla al amigo secreto o descifrar una pista dejada por el amigo secreto. Si se escoge la opción de descifrar pistas se continuará a la pantalla 4 en donde se ingresará la pista a descifrar, también hay una barra en donde se podrá probar el numero secreto hasta descubrir la pista. Finalmente se pulsa en Next para ir a la siguiente pantalla.
 
-*En la pantalla 5 se detallará la pista ocultada como título para que el usuario pueda verificar si está bien escrita o se equivocó al ingresar, por ello tendrá la opción de volver pulsando el botón atrás. El usuario deberá insertar el número secreto, que puede ser desde el número 1 al 26, solo permitirá ingresar números con un algoritmo en JS, una vez ingresado el número se debe pulsar en el botón DESCIFRAR PISTA para continuar a la siguiente pantalla 6.
+![image](https://user-images.githubusercontent.com/51206472/59082535-30c42900-88b9-11e9-9645-c25960832758.png)
 
-En la pantalla 6 se muestra la pista ya descifrada y se hace la consulta de si se logró encontrar la pista y se desea volver a jugar o si no se encontró la pista y se desea probar con otro número, si pasara este último se retornará a la pantalla 5. De lo contrario, si se pulta en la primera opción se continuará a la pantalla 7.
+*En la pantalla 5 se detallará la pista ocultada como título para ser usada en el juego, y luego se muestran dos opciones, la de volver a jugar y la de salir. Si le da en volver a jugar se mostraria la pantalla 3 nuevamente donde podra escoger entre descifrar otra pista u ocultar tu propia pista, si se escogiera ocultar se mostraria la pantalla 6 en donde se debera colocar la pista a cifrar, para ser ocultada, luego se escogerá un numero secreto con la barra, finalmente se da en NEXT para ir a la pantalla 7 donde se muestra la pista cifrada y existe la opcion de volver a jugar o salir. Si se pulsa en salir automaticamente llevara a la pantalla 8 que es GOOGLE.
 
-En la pantalla 7 se deberá ingresar la pista que se quiere ocultar y dar en NEXT, esta pista deberá contener solo letras, por ello se hizo un algoritmo en JS para garantizar eso. Se continuará a la pantalla 8 en donde se mostrará la pista a ocultar para verificar y si no coincide se deberá pulsar el botón atrás. En esta misma pantalla se ingresará el número secreto que será validado por un algoritmo en JS, y finalmente se dará en la opción de ocultar pista.
+![image](https://user-images.githubusercontent.com/51206472/59082666-ceb7f380-88b9-11e9-8437-95d11006303c.png)
 
-![image](https://user-images.githubusercontent.com/51206472/58929937-fe7ec400-871e-11e9-8c19-ad441bead8fd.png)
-
-*En la pantalla 9 se muestra la pista que fue ocultada y luego se podrá pulsar el botón de VOLVER A JUGAR o de lo contrario de ME VOY, que se muestra en la pantalla 10, quiere decir que al pulsar ME VOY dirigirá automáticamente a GOOGLE. En la pantalla 1, se vió que había un botón de INSTRUCCIONES DEL JUEGO, que direccionará a la pantalla 11 donde también se encuentra el botón JUGAR que llevará a la pantalla 2. Por último en la pantalla 12 se muestra que se agotaron los 3 intentos de ingreso de contraseña realizados en la pantalla 2.
+En la pantalla 9 se muestran las instrucciones del juego que serian direccionadas a partir de la pantalla 1, si se pulsara esa opcion. La pantalla 10 es la que muestra que se fallo en los intentos de contraseña dados en la pantalla 1.
 
