@@ -3,8 +3,8 @@
 header{
   width: 100%; /*anchura de elementos de bloque*/
   overflow: hidden; /* permite tener float*/
-  background: #008080;
-  margin-bottom: 20px;
+  background-image: url(fondo5.jpg)
+      margin-bottom: 20px;
 }
 .wrapper{         /*para centrar el contenido*/
   width: 90%;
@@ -14,17 +14,36 @@ header{
 }
 .wrapper1{         /*para centrar el contenido*/
   width: 30%;
-  max-width: 1000px;
+  max-width: 350px;
   margin:auto;
   overflow:hidden;
+  line-height: 40px;
 }
+.wrapper2{         /*para centrar el contenido*/
+  width: 30%;
+  max-width: 350px;
+  text-align: center;
+  margin:auto;
+  text-align: center;
+  overflow:hidden;
+  line-height: 20px;
+  float: center;
+}
+
 header .logo {
-  color: #F5F5F5;
-  font-size: 80px;
-  line-height: 200px; /*estar a altura de 200px*/
-  float:left;
+  color: white;
+  font-size: 50px;
+  line-height: 160px; /*estar a altura de 200px*/
+  float:center;
+  text-align:center;
   font-family: 'Pacifico';
 }
+ .pequeña{
+   width:300px;
+   height:300px;
+   float:left;
+ }
+
 
 .escoger {
   color: #3CBC8D;
@@ -51,10 +70,9 @@ header .logo {
   }
 }
 .titulo1{
-  color:  #008080;
-  font-family: 'Fredoka One', cursive;
-  font-family: 'Leckerli One', cursive;
-  font-size: 50px; 
+  color: #FFDAB9;
+  font-family:'Gochi Hand', cursive;
+  font-size: 30px; 
   text-align: center;
 }
 .titulo3{
@@ -78,12 +96,18 @@ header .logo {
   font-size: 55px; 
   text-align: center
 }
+input::-webkit-input-placeholder {
+  color:    #008080;
+  font-family:'Gochi Hand', cursive;
+  text-align: center;
+  font-size: 20px;
+}
 .fondo1 {
-  background:#FFDAB9;
   border-radius: 72px 72px 72px 72px;
   -moz-border-radius: 72px 72px 72px 72px;
   webkit-border-radius: 72px 72px 72px 72px ;
-  border: 20px solid #808080;
+  background: rgb(245, 131, 89);
+  
 }
 .fondo2 {
   background:#FFDAB9 ;
@@ -129,3 +153,50 @@ input[type=text] {
     webkit-border-radius:60px 60px 60px 60px;
 
   }
+  @import 'https://fonts.googleapis.com/css?family=Rubik+One';
+
+/*body, html { 
+  margin: 0; 
+  padding: 0; 
+  height: 100%; 
+  width: 100%; 
+  background: #20B2AA;
+  background: linear-gradient(to left, rgb(50, 50, 240) , #e35d5b);
+}*/
+.button {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 9px 20px;
+  border: 0px solid #a12727;
+  border-radius: 60px;
+  background: #4ac6ff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4ac6ff), to(#269982));
+  background: -moz-linear-gradient(top, #4ac6ff, #269982);
+  background: linear-gradient(to bottom, #4ac6ff, #269982);
+  -webkit-box-shadow: #ff5959 1px 0px 12px 0px;
+  -moz-box-shadow: #ff5959 1px 0px 12px 0px;
+  box-shadow: #ff5959 1px 0px 12px 0px;
+  text-shadow: #591717 2px 1px 2px;
+  font: normal normal bold 17px comic sans ms;
+  color: #ffffff;
+  text-decoration: none;
+}
+.button:hover,
+.button:focus {
+  background: #59eeff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#59eeff), to(#2eb89c));
+  background: -moz-linear-gradient(top, #59eeff, #2eb89c);
+  background: linear-gradient(to bottom, #59eeff, #2eb89c);
+  color: #ffffff;
+  text-decoration: none;
+}
+.button:active {
+  background: #2c7799;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2c7799), to(#269982));
+  background: -moz-linear-gradient(top, #2c7799, #269982);
+  background: linear-gradient(to bottom, #2c7799, #269982);
+}
+
+
+
