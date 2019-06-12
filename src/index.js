@@ -50,6 +50,7 @@ function mostrarpantalla2() {
 function mostrarpantalla3() {    /*MOSTRAR PANTALLA DE PREGUNTAS PERU*/
   ocultar1();
   pantalla3.classList.add('mostrar');
+  
 }
 function mostrarpantalla4() {
   ocultar1();
@@ -76,8 +77,8 @@ let i=0;
 btn.addEventListener('click',() => { 
     let n=contraseña.value;
     if(n=="LABORATORIA")
-    { mostrarpantalla2();
-    } 
+    { mostrarpantalla2();document.getElementById('cabecera').innerHTML="¡Empecemos!";
+  } 
     if(i>1)
      { mostrarpantalla8();   
      }
@@ -107,7 +108,7 @@ function soloLetras(e){
 };
 const desplazamiento = document.getElementById("desplazamiento");
 const texto = document.getElementById("texto");
-const textoCifrado = document.getElementById("cifrado");
+const textoCifrado = document.getElementById("cifrado1");
 
 function cifrado(){
 	const textoIngresado = texto.value;
@@ -141,22 +142,34 @@ desplazamiento.addEventListener("change", cifrado);
 /* Ingresa nombre y muestra interaccion en pantalla 3 */
 btn1.addEventListener('click',() => { 
     let m=nombre.value;
-    document.getElementById('escogeropcion').innerHTML="¡Genial "+m+ " !";
+    document.getElementById('cabecera').innerHTML="¡Genial "+m+ " !";
     mostrarpantalla3();     
 });
 
 /* Mostrar pantalla de descifrado */
 btn2.addEventListener('click',() => { 
+  document.getElementById('cabecera').innerHTML="¡Oculta tus pistas!";
     mostrarpantalla4();         
 });
 
 
 /* Mostrar pantalla de ingreso de numero para descifrar */
 btn3.addEventListener('click',() => { 
-    mostrarpantalla4();         
+  document.getElementById('cabecera').innerHTML="Oculta tus pistas"; 
+  mostrarpantalla4();         
 });
 
 btn4.addEventListener('click',() => { 
- mostrarpantalla5(); 
+  const m=textoCifrado.value;
+  document.getElementById('nuevapista').innerHTML=m; 
+  mostrarpantalla5(); 
+});
+btn5.addEventListener('click',() => { 
+  texto.value="";
+  desplazamiento.value=1;
+  cifrado1.value="";
+  let m=nombre.value;
+  document.getElementById('cabecera').innerHTML="¡Genial "+m+ " !";
+  mostrarpantalla3(); 
 });
 
