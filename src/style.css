@@ -116,6 +116,12 @@ header .logo {
   font-size: 30px; 
   text-align: center;
 }
+footer {
+  color: black;
+  font-family: 'Pacifico';
+  font-size: 10px; 
+  text-align: center;
+}
 input::-webkit-input-placeholder {
   color:    #FF7F50;
   font-family: 'Pacifico';

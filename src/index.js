@@ -65,6 +65,19 @@ let i = 0;
 /* Validando contraseña LABORATORIA */
 let btn=document.getElementById('btn');
 let contraseña=document.getElementById('contraseña');
+let input = document.getElementById("contraseña");
+
+// Execute a function when the user releases a key on the keyboard
+input.addEventListener("keyup", function(event) {
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("btn").click();
+  }
+});
+
 btn.addEventListener('click', () => {
   let n = contraseña.value;
   if (n == "LABORATORIA") {
@@ -107,6 +120,17 @@ desplazamiento1.addEventListener("change", descifrado);
 
 let btn1=document.getElementById('btn1');
 let nombre=document.getElementById('nombre');
+let input1 = document.getElementById("nombre");
+// Execute a function when the user releases a key on the keyboard
+input1.addEventListener("keyup", function(event) {
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("btn1").click();
+  }
+});
 btn1.addEventListener('click', () => {
   let m = nombre.value;
   document.getElementById('cabecera').innerHTML = "¡Genial " + m + " !";
@@ -129,6 +153,18 @@ btn3.addEventListener('click', () => {
 });
 
 let btn4=document.getElementById('btn4');
+let input2 = document.getElementById("desplazamiento");
+// Execute a function when the user releases a key on the keyboard
+input2.addEventListener("keyup", function(event) {
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("btn4").click();
+  }
+});
+
 btn4.addEventListener('click', () => {
   const m = textoCifrado.value;
   document.getElementById('nuevapista').innerHTML = m;
@@ -145,6 +181,18 @@ btn5.addEventListener('click', () => {
   mostrarpantalla3();
 });
 let btn6=document.getElementById('btn6');
+let input3 = document.getElementById("desplazamiento1");
+// Execute a function when the user releases a key on the keyboard
+input3.addEventListener("keyup", function(event) {
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("btn6").click();
+  }
+});
+
 btn6.addEventListener('click', () => {
   const m = textodescifrado.value;
   document.getElementById('pistadescifrada').innerHTML = m;
