@@ -24,7 +24,6 @@ header{
   max-width: 350px;
   text-align: center;
   margin:auto;
-  text-align: center;
   overflow:hidden;
   line-height: 20px;
   float: center;
@@ -101,7 +100,7 @@ header .logo {
 }
 .titulo4{
   color:  #FFDAB9;
-  font-family:'Gochi Hand', cursive;
+   font-family: 'Carme', sans-serif;
   font-size: 20px; 
   text-align: center;
 }
@@ -157,6 +156,12 @@ textarea::-webkit-input-placeholder {
 }
 
 .fondo4 {
+  border-radius: 72px 72px 72px 72px;
+  -moz-border-radius: 72px 72px 72px 72px;
+  webkit-border-radius: 72px 72px 72px 72px ;
+  background: linear-gradient(to left,#f36f6d, #A989E9);
+}
+.fondo5 {
   border-radius: 72px 72px 72px 72px;
   -moz-border-radius: 72px 72px 72px 72px;
   webkit-border-radius: 72px 72px 72px 72px ;
