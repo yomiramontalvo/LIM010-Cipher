@@ -2,7 +2,7 @@
 window.cipher = {
   encode: (offset, string) => {
     const enc = string.split('').map(c => {
-      let mayus = (c === c.toUpperCase()) ? true : false;
+     let mayus = (c === c.toUpperCase()) ? true : false;
       let valorEntero = c.toLowerCase().charCodeAt(0);
       if (valorEntero >= 97 && valorEntero <= 122) {
         let valorDesplazamiento = parseInt(offset);
