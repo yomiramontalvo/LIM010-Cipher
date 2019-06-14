@@ -74,7 +74,12 @@ header{
   line-height: 20px;
   float: center;
 }
-
+body{
+  background-image:url("fondo11.png");
+background-repeat:no-repeat;
+background-attachment: fixed;
+background-size:cover;
+}
 
 header .logo {
   color: white;
