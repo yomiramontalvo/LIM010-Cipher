@@ -87,9 +87,11 @@ btn.addEventListener('click', () => {
     mostrarpantalla8();
   }
   else {
-    i++;
-    contraseña.value = ''; document.getElementById('intentos').innerHTML = "Tienes solo 3 intentos";
-  }
+  if(i==0){i++;
+    contraseña.value = ''; document.getElementById('intentos').innerHTML = "Tienes solo 2 intentos más";}
+  else
+ { i++;contraseña.value = ''; document.getElementById('intentos').innerHTML = "Tienes solo 1 intento más";}
+}
 });
 const desplazamiento = document.getElementById("desplazamiento");
 const texto = document.getElementById("texto");
@@ -133,8 +135,13 @@ input1.addEventListener("keyup", function(event) {
 });
 btn1.addEventListener('click', () => {
   let m = nombre.value;
-  document.getElementById('cabecera').innerHTML = "¡Genial " + m + " !";
-  mostrarpantalla3();
+  if(m==""){
+    document.getElementById('noname').innerHTML = "Debes completar el campo";
+}
+  else{
+    document.getElementById('cabecera').innerHTML = "¡Genial " + m + " !";
+    mostrarpantalla3();
+  }
 });
 
 /* Mostrar pantalla de descifrado */
@@ -167,11 +174,36 @@ input2.addEventListener("keyup", function(event) {
 
 btn4.addEventListener('click', () => {
   const m = textoCifrado.value;
-  document.getElementById('nuevapista').innerHTML = m;
-  mostrarpantalla5();
+  if(m==""){
+    document.getElementById('notextc').innerHTML = "Debes ingresar tu pista";
+}
+  else{
+    document.getElementById('nuevapista').innerHTML = m;
+    mostrarpantalla5();
+  }
+});
+let btn9=document.getElementById('btn9');
+btn9.addEventListener('click', () => {
+mostrarpantalla3();
+texto.value = "";
+desplazamiento.value = 1;
+textoCifrado.value = "";
+texto1.value = "";
+desplazamiento1.value = 1;
+textodescifrado.value = "";
+});
+
+let btn10=document.getElementById('btn10');
+btn10.addEventListener('click', () => {
+mostrarpantalla3();
+texto.value = "";
+desplazamiento.value = 1;
+textoCifrado.value = "";
+texto1.value = "";
+desplazamiento1.value = 1;
+textodescifrado.value = "";
 });
 let btn5=document.getElementById('btn5');
-
 btn5.addEventListener('click', () => {
   texto.value = "";
   desplazamiento.value = 1;
@@ -195,8 +227,13 @@ input3.addEventListener("keyup", function(event) {
 
 btn6.addEventListener('click', () => {
   const m = textodescifrado.value;
-  document.getElementById('pistadescifrada').innerHTML = m;
-  mostrarpantalla7();
+  if(m==""){
+    document.getElementById('notextd').innerHTML = "Debes ingresar la pista";
+}
+  else{
+    document.getElementById('pistadescifrada').innerHTML = m;
+    mostrarpantalla7();
+  }
 });
 let btn7=document.getElementById('btn7');
 btn7.addEventListener('click', () => {
@@ -207,6 +244,12 @@ btn7.addEventListener('click', () => {
   document.getElementById('cabecera').innerHTML = "¡Genial " + m + " !";
   mostrarpantalla3();
 });
+let btn8=document.getElementById('btn8');
+btn8.addEventListener('click', () => {
+  location.reload();
+});
+
+
 
 /*const soloLetras = (e) => {
   let key = e.keyCode || e.which;

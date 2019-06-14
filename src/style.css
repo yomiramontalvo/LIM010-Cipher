@@ -3,7 +3,6 @@
 header{
   width: 100%; /*anchura de elementos de bloque*/
   overflow: hidden; /* permite tener float*/
-  background-image: url(fondo5.jpg)
       margin-bottom: 20px;
 }
 .wrapper{         /*para centrar el contenido*/
@@ -18,16 +17,45 @@ header{
   margin:auto;
   overflow:hidden;
   line-height: 40px;
+  padding:30px 10px ;
 }
 .wrapper2{         /*para centrar el contenido*/
   width: 30%;
   max-width: 350px;
+  padding: 9px 30px;
   text-align: center;
   margin:auto;
   overflow:hidden;
   line-height: 20px;
   float: center;
 }
+.wrapper5{         /*para centrar el contenido*/
+  width: 30%;
+  max-width: 350px;
+  text-align: center;
+  margin:auto;
+  overflow:hidden;
+  line-height: 20px;
+  float: right;
+}
+.wrapper6{         /*para centrar el contenido*/
+  width: 30%;
+  max-width: 350px;
+  text-align: center;
+  margin:auto;
+  overflow:hidden;
+  line-height: 20px;
+  float: left;
+}
+.wrapper4{         /*para centrar el contenido*/
+  width: 30%;
+  max-width: 350px;
+  margin:auto;
+  overflow:hidden;
+  line-height: 40px;
+  padding:8px;
+}
+
 .caja {
   background: #FFDAB9;
   border: 1px solid #FFDAB9;
@@ -119,7 +147,7 @@ header .logo {
 footer {
   color: black;
   font-family: 'Pacifico';
-  font-size: 10px; 
+  font-size: 20px; 
   text-align: center;
 }
 input::-webkit-input-placeholder {
@@ -225,7 +253,7 @@ body, html {
   display: inline-block;
   text-align: center;
   vertical-align: middle;
-  padding: 9px 20px;
+  padding: 9px 25px;
   border: 0px solid #20B2AA;
   border-radius: 60px;
   background: #4ac6ff;
