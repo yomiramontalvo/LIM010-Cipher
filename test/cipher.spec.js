@@ -25,8 +25,6 @@ describe('cipher', () => {
     it('debería retornar " " para " " con offset 10', () =>{
       assert.equal(cipher.encode(10, ' '), ' '); 
     }); 
-
-
   });
 
   describe('cipher.decode', () => {
