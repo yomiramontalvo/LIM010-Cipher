@@ -80,6 +80,13 @@ input.addEventListener("keyup", function (event) {
 btn.addEventListener('click', () => {
   let n = contraseña.value;
   if (n == "LABORATORIA") {
+    nombre.value="";
+    texto1.value = "";
+    desplazamiento1.value = 1;
+    textodescifrado.value = "";
+    texto.value = "";
+    desplazamiento.value = 1;
+    textoCifrado.value = "";
     mostrarpantalla2(); document.getElementById('cabecera').innerHTML = "¡Empecemos!";
   }
   if (i > 1) {
@@ -249,25 +256,14 @@ btn8.addEventListener('click', () => {
   location.reload();
 });
 
+let btn12=document.getElementById('btn12');
+btn12.addEventListener("click", () => {
+  let email=prompt('Escribe el correo electrónico de tu Amigo Secreto y envíale tu pista:');
+  let subject='Envío pista Amigo Secreto';
+  let body=textoCifrado.value;
+  window.open(`mailto:${email}?subject=${subject}&body=${body}`);
+});
 
 
-/*const soloLetras = (e) => {
-  let key = e.keyCode || e.which;
-  let tecla = String.fromCharCode(key).toLowerCase();
-  const letras = " áéíóúabcdefghijklmnñopqrstuvwxyz";
-  const especiales = "8-37-39-46";
-
-  let tecla_especial = false
-  for (var i in especiales) {
-    if (key == especiales[i]) {
-      tecla_especial = true;
-      break;
-    }
-  }
-  if (letras.indexOf(tecla) == -1 && !tecla_especial) {
-    return false;
-  }
-};
-onkeypress="return soloLetras(event)" en el HTML, donde vas a colocar el texto TEXTAREA*/
 
 /*AJAX*/

@@ -13,7 +13,7 @@ header{
 @media screen and (max-width:600px ){
 header .logo {
   color: white;
-  font-size: 48px;
+  font-size: 45px;
   line-height: 130px; /*estar a altura de 200px*/
   float:center;
   text-align:center;
@@ -28,8 +28,8 @@ header .logo {
   -moz-box-shadow: 0px 0px 20px 20px #f58359;
   box-shadow: 0px 0px 10px 10px #f58359; 
 box-sizing: border-box;
-  width:260px;
-  padding:28px;
+  width:250px;
+  padding:20px;
   margin:auto;
   margin-top:20px;
 }
@@ -57,17 +57,6 @@ box-sizing: border-box;
 }
 
 .fondo4 {
-  border-radius: 72px 72px 72px 72px;
-  -moz-border-radius: 72px 72px 72px 72px;
-  -webkit-border-radius: 72px 72px 72px 72px ;
-  background: linear-gradient(to left,#f36f6d, #A989E9);
-  box-sizing: border-box;
-  width:260px;
-  padding:35px;
-  margin:auto;
-  margin-top: 20px;
-}
-.fondo5 {
   border-radius: 72px 72px 72px 72px;
   -moz-border-radius: 72px 72px 72px 72px;
   -webkit-border-radius: 72px 72px 72px 72px ;
@@ -143,7 +132,7 @@ box-sizing: border-box;
 .titulo1{
   color: #FFDAB9;
   font-family:'Gochi Hand', cursive;
-  font-size: 30px; 
+  font-size: 28px; 
   text-align: center;
 }
 .titulo2 {
@@ -160,8 +149,8 @@ box-sizing: border-box;
 }
 .titulo4{
   color:  #FFDAB9;
-   font-family: 'Carme', sans-serif;
-  font-size: 20px; 
+  font-family:'Gochi Hand', cursive;
+  font-size: 23px; 
   text-align: center;
 }
 .titulo5 {
@@ -225,7 +214,7 @@ footer {
   background: linear-gradient(to bottom, #2c7799, #269982);
 }
 body{
-  background-image:url("fondo1.png");
+  background-image:url("fondo4.png");
   background-repeat:no-repeat;
   background-attachment: fixed ;
   background-size:cover;
@@ -284,17 +273,6 @@ body{
         }
         
      .fondo4 {
-          border-radius: 72px 72px 72px 72px;
-          -moz-border-radius: 72px 72px 72px 72px;
-          -webkit-border-radius: 72px 72px 72px 72px ;
-          background: linear-gradient(to left,#f36f6d, #A989E9);
-          box-sizing: border-box;
-          width:370px;
-          padding:70px;
-          margin:auto;
-          margin-top:20px;
-        }
-      .fondo5 {
           border-radius: 72px 72px 72px 72px;
           -moz-border-radius: 72px 72px 72px 72px;
           -webkit-border-radius: 72px 72px 72px 72px ;
@@ -386,7 +364,7 @@ body{
         }
         .titulo4{
           color:  #FFDAB9;
-           font-family: 'Carme', sans-serif;
+          font-family:'Gochi Hand', cursive;
           font-size: 28px; 
           text-align: center;
         }
@@ -512,21 +490,11 @@ body{
               background: linear-gradient(to left,#f36f6d, #A989E9);
               box-sizing: border-box;
               width:380px;
-              padding:35px;
+              padding:55px;
               margin:auto;
               margin-top:20px;
             }
-          .fondo5 {
-              border-radius: 72px 72px 72px 72px;
-              -moz-border-radius: 72px 72px 72px 72px;
-              -webkit-border-radius: 72px 72px 72px 72px ;
-              background: linear-gradient(to left,#f36f6d, #A989E9);
-              box-sizing: border-box;
-              width:380px;
-              padding:35px;
-              margin:auto;
-              margin-top:20px;
-            }
+
       .wrapper1{         /*para centrar el contenido*/
        width: 100%;
        max-width: 1000px;
@@ -608,7 +576,7 @@ body{
             }
             .titulo4{
               color:  #FFDAB9;
-               font-family: 'Carme', sans-serif;
+              font-family:'Gochi Hand', cursive;
               font-size: 23px; 
               text-align: center;
             }
@@ -632,7 +600,7 @@ body{
       float: center;
       box-sizing: border-box;
       margin-top: 10px;
-      width: 180px;
+      width: 250px;
             }
             footer {
               color: black;
