@@ -79,7 +79,7 @@ input.addEventListener("keyup", function (event) {
 
 btn.addEventListener('click', () => {
   let n = contraseña.value;
-  if (n == "1") {
+  if (n == "LABORATORIA") {
     mostrarpantalla2(); document.getElementById('cabecera').innerHTML = "¡Empecemos!";
   }
   if (i > 1) {
