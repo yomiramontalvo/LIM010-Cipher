@@ -4,6 +4,7 @@
 
 <head>
   <meta charset="UTF-8"> <!-- Sirve para el header, como se vera -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Carme" rel="stylesheet">
@@ -15,7 +16,7 @@
   <title>SecretFriend</title>
 </head>
 
-<body >
+<body>
   <!-- Nombre y Logo -->
   <header>
     <div class="wrapper">
@@ -26,16 +27,16 @@
   <main>
     
     <!-- Pantalla 1 -->
-    <section id="boton1" class="  fondo1 wrapper1">
+    <section id="boton1" class=" fondo1">
       <!-- para centrar contenido-->
-      <h1 class="titulo1 ">Ingresa la clave de tu comunidad </h1><br/>
+      <div class="titulo1">Ingresa la clave de tu comunidad </div><br/>
        <div class="wrapper3"> <input type="password" placeholder="Contraseña" class="caja" id="contraseña" /></div><br/>
         <div  class="wrapper2"><button type="button"  class="button" id="btn">GO</button></div>
         <p id="intentos" class="escoger"></p>
     </section>
 
     <!-- Pantalla 2 -->
-    <section id="boton2" class="fondo2 wrapper1 ocultar">
+    <section id="boton2" class="fondo2 ocultar">
       <h1 class="titulo2">Ingresa tu nombre</h1><br>
       <div class="wrapper3"><input type="text" placeholder="Nombre" class="caja" id="nombre"/></div><br>
       <div  class="wrapper2"><button class="button" type="button" id="btn1">Next</button></div>
@@ -43,7 +44,7 @@
     </section>
 
     <!-- Pantalla 3 -->
-    <section id="boton3" class=" fondo3 wrapper1 ocultar">
+    <section id="boton3" class=" fondo3  ocultar">
         <h1 class="titulo3">Ahora escoge una opción</h1><br>
       <section class="escoger">
         <div><button type="button" class="button" id="btn2">Descifra las pistas</button><br/></div>
@@ -57,7 +58,7 @@
 
 
     <!-- Pantalla 4 -->
-    <section id="boton4" class="fondo4 wrapper1 ocultar">
+    <section id="boton4" class="fondo4 ocultar">
       <h1 class="titulo4">Ingresa tu pista</h1>
         <div class="wrapper3"><textarea type="text" class="caja" placeholder="mi pista" name="texto" id="texto"></textarea></div>
         <h1 class="titulo4">Desliza y la ocultarás</h1>
@@ -71,7 +72,7 @@
 
 
     <!-- Pantalla 5 -->
-    <section id="boton5" class=" fondo4 wrapper1 ocultar">
+    <section id="boton5" class=" fondo4 ocultar">
         <h3></h3><br/>
       <h1 class="titulo5">Tu nueva pista es:</h1><br/>
       <h1 class="titulo6" id="nuevapista">....</h1><br />
@@ -82,7 +83,7 @@
 
 
     <!-- Pantalla 6 -->
-    <section id="boton6" class="fondo5 wrapper1 ocultar">
+    <section id="boton6" class="fondo5 ocultar">
       <h1 class="titulo4">Ingresa la pista que encontraste</h1>
         <div class="wrapper3"><textarea type="text" class="caja" placeholder="Pista de mi SF" name="texto1" id="texto1"></textarea></div>
         <h1 class="titulo4">Desliza hasta descifrar</h1>
@@ -96,7 +97,7 @@
 
 
     <!-- Pantalla 7 -->
-    <section id="boton7" class=" fondo4 wrapper1 ocultar">
+    <section id="boton7" class=" fondo4  ocultar">
         <h3></h3><br/>
       <h1 class="titulo5">La pista descifrada es:</h1><br/>
       <h1 class="titulo6" id="pistadescifrada">....</h1><br />
@@ -106,7 +107,7 @@
     </section>
  
     <!-- Pantalla 8 -->
-    <section id="boton8" class="  fondo1 wrapper1 ocultar">
+    <section id="boton8" class="  fondo1  ocultar">
       <!-- para centrar contenido-->
       <h1 class="titulo1 ">UPS... </h1>
       <h1 class="titulo4 ">Agotaste los 3 intentos...</h1>

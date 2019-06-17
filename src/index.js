@@ -9,7 +9,6 @@ let pantalla7 = document.getElementById('boton7');
 let pantalla8 = document.getElementById('boton8');
 
 
-
 const ocultar1 = () => {
   pantalla1.classList.remove('mostrar');
   pantalla2.classList.remove('mostrar');
@@ -63,12 +62,12 @@ const mostrarpantalla8 = () => {
 }
 let i = 0;
 /* Validando contraseña LABORATORIA */
-let btn=document.getElementById('btn');
-let contraseña=document.getElementById('contraseña');
+let btn = document.getElementById('btn');
+let contraseña = document.getElementById('contraseña');
 let input = document.getElementById("contraseña");
 
 // Execute a function when the user releases a key on the keyboard
-input.addEventListener("keyup", function(event) {
+input.addEventListener("keyup", function (event) {
   // Number 13 is the "Enter" key on the keyboard
   if (event.keyCode === 13) {
     // Cancel the default action, if needed
@@ -80,18 +79,19 @@ input.addEventListener("keyup", function(event) {
 
 btn.addEventListener('click', () => {
   let n = contraseña.value;
-  if (n == "LABORATORIA") {
+  if (n == "1") {
     mostrarpantalla2(); document.getElementById('cabecera').innerHTML = "¡Empecemos!";
   }
   if (i > 1) {
     mostrarpantalla8();
   }
   else {
-  if(i==0){i++;
-    contraseña.value = ''; document.getElementById('intentos').innerHTML = "Tienes solo 2 intentos más";}
-  else
- { i++;contraseña.value = ''; document.getElementById('intentos').innerHTML = "Tienes solo 1 intento más";}
-}
+    if (i == 0) {
+      i++;
+      contraseña.value = ''; document.getElementById('intentos').innerHTML = "Tienes solo 2 intentos más";
+    }
+    else { i++; contraseña.value = ''; document.getElementById('intentos').innerHTML = "Tienes solo 1 intento más"; }
+  }
 });
 const desplazamiento = document.getElementById("desplazamiento");
 const texto = document.getElementById("texto");
@@ -120,11 +120,11 @@ texto1.addEventListener("keyup", descifrado);
 desplazamiento1.addEventListener("change", descifrado);
 /* Ingresa nombre y muestra interaccion en pantalla 3 */
 
-let btn1=document.getElementById('btn1');
-let nombre=document.getElementById('nombre');
+let btn1 = document.getElementById('btn1');
+let nombre = document.getElementById('nombre');
 let input1 = document.getElementById("nombre");
 // Execute a function when the user releases a key on the keyboard
-input1.addEventListener("keyup", function(event) {
+input1.addEventListener("keyup", function (event) {
   // Number 13 is the "Enter" key on the keyboard
   if (event.keyCode === 13) {
     // Cancel the default action, if needed
@@ -135,17 +135,17 @@ input1.addEventListener("keyup", function(event) {
 });
 btn1.addEventListener('click', () => {
   let m = nombre.value;
-  if(m==""){
+  if (m == "") {
     document.getElementById('noname').innerHTML = "Debes completar el campo";
-}
-  else{
+  }
+  else {
     document.getElementById('cabecera').innerHTML = "¡Genial " + m + " !";
     mostrarpantalla3();
   }
 });
 
 /* Mostrar pantalla de descifrado */
-let btn2=document.getElementById('btn2');
+let btn2 = document.getElementById('btn2');
 btn2.addEventListener('click', () => {
   document.getElementById('cabecera').innerHTML = "¡Descifra pistas!";
   mostrarpantalla6();
@@ -153,16 +153,16 @@ btn2.addEventListener('click', () => {
 
 
 /* Mostrar pantalla de ingreso de numero para descifrar */
-let btn3=document.getElementById('btn3');
+let btn3 = document.getElementById('btn3');
 btn3.addEventListener('click', () => {
   document.getElementById('cabecera').innerHTML = "Oculta tus pistas";
   mostrarpantalla4();
 });
 
-let btn4=document.getElementById('btn4');
+let btn4 = document.getElementById('btn4');
 let input2 = document.getElementById("desplazamiento");
 // Execute a function when the user releases a key on the keyboard
-input2.addEventListener("keyup", function(event) {
+input2.addEventListener("keyup", function (event) {
   // Number 13 is the "Enter" key on the keyboard
   if (event.keyCode === 13) {
     // Cancel the default action, if needed
@@ -174,36 +174,36 @@ input2.addEventListener("keyup", function(event) {
 
 btn4.addEventListener('click', () => {
   const m = textoCifrado.value;
-  if(m==""){
+  if (m == "") {
     document.getElementById('notextc').innerHTML = "Debes ingresar tu pista";
-}
-  else{
+  }
+  else {
     document.getElementById('nuevapista').innerHTML = m;
     mostrarpantalla5();
   }
 });
-let btn9=document.getElementById('btn9');
+let btn9 = document.getElementById('btn9');
 btn9.addEventListener('click', () => {
-mostrarpantalla3();
-texto.value = "";
-desplazamiento.value = 1;
-textoCifrado.value = "";
-texto1.value = "";
-desplazamiento1.value = 1;
-textodescifrado.value = "";
+  mostrarpantalla3();
+  texto.value = "";
+  desplazamiento.value = 1;
+  textoCifrado.value = "";
+  texto1.value = "";
+  desplazamiento1.value = 1;
+  textodescifrado.value = "";
 });
 
-let btn10=document.getElementById('btn10');
+let btn10 = document.getElementById('btn10');
 btn10.addEventListener('click', () => {
-mostrarpantalla3();
-texto.value = "";
-desplazamiento.value = 1;
-textoCifrado.value = "";
-texto1.value = "";
-desplazamiento1.value = 1;
-textodescifrado.value = "";
+  mostrarpantalla3();
+  texto.value = "";
+  desplazamiento.value = 1;
+  textoCifrado.value = "";
+  texto1.value = "";
+  desplazamiento1.value = 1;
+  textodescifrado.value = "";
 });
-let btn5=document.getElementById('btn5');
+let btn5 = document.getElementById('btn5');
 btn5.addEventListener('click', () => {
   texto.value = "";
   desplazamiento.value = 1;
@@ -212,10 +212,10 @@ btn5.addEventListener('click', () => {
   document.getElementById('cabecera').innerHTML = "¡Genial " + m + " !";
   mostrarpantalla3();
 });
-let btn6=document.getElementById('btn6');
+let btn6 = document.getElementById('btn6');
 let input3 = document.getElementById("desplazamiento1");
 // Execute a function when the user releases a key on the keyboard
-input3.addEventListener("keyup", function(event) {
+input3.addEventListener("keyup", function (event) {
   // Number 13 is the "Enter" key on the keyboard
   if (event.keyCode === 13) {
     // Cancel the default action, if needed
@@ -227,15 +227,15 @@ input3.addEventListener("keyup", function(event) {
 
 btn6.addEventListener('click', () => {
   const m = textodescifrado.value;
-  if(m==""){
+  if (m == "") {
     document.getElementById('notextd').innerHTML = "Debes ingresar la pista";
-}
-  else{
+  }
+  else {
     document.getElementById('pistadescifrada').innerHTML = m;
     mostrarpantalla7();
   }
 });
-let btn7=document.getElementById('btn7');
+let btn7 = document.getElementById('btn7');
 btn7.addEventListener('click', () => {
   texto1.value = "";
   desplazamiento1.value = 1;
@@ -244,7 +244,7 @@ btn7.addEventListener('click', () => {
   document.getElementById('cabecera').innerHTML = "¡Genial " + m + " !";
   mostrarpantalla3();
 });
-let btn8=document.getElementById('btn8');
+let btn8 = document.getElementById('btn8');
 btn8.addEventListener('click', () => {
   location.reload();
 });
