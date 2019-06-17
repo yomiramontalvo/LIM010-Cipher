@@ -27,10 +27,6 @@ const ocultar1 = () => {
   pantalla7.classList.add('ocultar');
   pantalla8.classList.add('ocultar');
 }
-/*const mostrarpantalla1 = () => {
-  ocultar1();
-  pantalla1.classList.add('mostrar');
-}*/
 const mostrarpantalla2 = () => {
   ocultar1();
   pantalla2.classList.add('mostrar');
@@ -80,7 +76,7 @@ input.addEventListener("keyup", function (event) {
 btn.addEventListener('click', () => {
   let n = contraseña.value;
   if (n == "LABORATORIA") {
-    nombre.value="";
+    nombre.value = "";
     texto1.value = "";
     desplazamiento1.value = 1;
     textodescifrado.value = "";
@@ -256,11 +252,11 @@ btn8.addEventListener('click', () => {
   location.reload();
 });
 
-let btn12=document.getElementById('btn12');
+let btn12 = document.getElementById('btn12');
 btn12.addEventListener("click", () => {
-  let email=prompt('Escribe el correo electrónico de tu Amigo Secreto y envíale tu pista:');
-  let subject='Envío pista Amigo Secreto';
-  let body=textoCifrado.value;
+  let email = prompt('Escribe el correo electrónico de tu Amigo Secreto y envíale tu pista:');
+  let subject = 'Envío pista Amigo Secreto';
+  let body = textoCifrado.value;
   window.open(`mailto:${email}?subject=${subject}&body=${body}`);
 });
 
