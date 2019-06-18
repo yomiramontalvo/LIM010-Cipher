@@ -9,11 +9,11 @@ header{
   overflow: hidden; /* permite tener float*/
       margin-bottom: 20px;
 }
-/*Pantalla de 600px*/
+/*screen de 600px*/
 @media screen and (max-width:600px ){
 header .logo {
   color: white;
-  font-size: 45px;
+  font-size: 40px;
   line-height: 130px; /*estar a altura de 200px*/
   float:center;
   text-align:center;
@@ -28,7 +28,7 @@ header .logo {
   -moz-box-shadow: 0px 0px 20px 20px #f58359;
   box-shadow: 0px 0px 10px 10px #f58359; 
 box-sizing: border-box;
-  width:250px;
+  width:240px;
   padding:20px;
   margin:auto;
   margin-top:20px;
@@ -39,7 +39,7 @@ box-sizing: border-box;
   -webkit-border-radius: 70px 70px 70px 70px ;
   background: linear-gradient(to left,#82F3BE, rgb(250, 157, 51));
   box-sizing: border-box;
-  width:260px;
+  width:240px;
   padding:20px;
   margin:auto;
   margin-top: 20px;
@@ -50,7 +50,7 @@ box-sizing: border-box;
   -webkit-border-radius: 70px 70px 70px 70px ;
   background: linear-gradient(to left,#f36f6d, #E9899C);
   box-sizing: border-box;
-  width:260px;
+  width:240px;
   padding:35px;
   margin:auto;
   margin-top: 20px;
@@ -62,7 +62,7 @@ box-sizing: border-box;
   -webkit-border-radius: 72px 72px 72px 72px ;
   background: linear-gradient(to left,#f36f6d, #A989E9);
   box-sizing: border-box;
-  width:260px;
+  width:240px;
   padding:35px;
   margin:auto;
   margin-top: 20px;
@@ -128,37 +128,37 @@ box-sizing: border-box;
   padding: 11px;
   width: 120px;
 }
-.titulo1{
+.title1{
   color: #FFDAB9;
   font-family:'Gochi Hand', cursive;
   font-size: 28px; 
   text-align: center;
 }
-.titulo2 {
+.title2 {
   color: #F36C1F;
   font-family:'Gochi Hand', cursive;
   font-size: 30px; 
   text-align: center;
 }
-.titulo3{
+.title3{
   color:  #FFDAB9;
   font-family:'Gochi Hand', cursive;
   font-size: 27px; 
   text-align: center;
 }
-.titulo4{
+.title4{
   color:  #FFDAB9;
   font-family:'Gochi Hand', cursive;
-  font-size: 23px; 
+  font-size: 20px; 
   text-align: center;
 }
-.titulo5 {
+.title5 {
   color: #FFDAB9;
   font-family: 'Pacifico';
   font-size: 30px; 
   text-align: center;
 }
-.titulo6 {
+.title6 {
   color: black;
   font-family:'Gochi Hand', cursive;
   font-size: 30px; 
@@ -193,7 +193,7 @@ footer {
   background: -moz-linear-gradient(top, #4ac6ff, #269982);
   background: linear-gradient(to bottom, #4ac6ff, #269982);
   text-shadow: #591717 2px 1px 2px;
-  font: normal normal bold 15px comic sans ms;
+  font: normal normal bold 13px comic sans ms;
   color: #ffffff;
   text-decoration: none;
 }
@@ -218,10 +218,9 @@ body{
   background-attachment: fixed ;
   background-size:cover;
   }
-
 }
 
-/*Pantalla de minimo 600px*/
+/*screen de minimo 600px*/
 @media screen and (min-width:600px  ){
 header .logo {
  color: white;
@@ -343,37 +342,37 @@ header .logo {
           padding: 11px;
           width: 120px;
         }
-        .titulo1{
+        .title1{
           color: #FFDAB9;
           font-family:'Gochi Hand', cursive;
           font-size: 50px; 
           text-align: center;
         }
-        .titulo2 {
+        .title2 {
           color: #F36C1F;
           font-family:'Gochi Hand', cursive;
           font-size: 40px; 
           text-align: center;
         }
-        .titulo3{
+        .title3{
           color:  #FFDAB9;
           font-family:'Gochi Hand', cursive;
           font-size: 50px; 
           text-align: center;
         }
-        .titulo4{
+        .title4{
           color:  #FFDAB9;
           font-family:'Gochi Hand', cursive;
           font-size: 28px; 
           text-align: center;
         }
-        .titulo5 {
+        .title5 {
           color: #FFDAB9;
           font-family: 'Pacifico';
           font-size: 35px; 
           text-align: center;
         }
-        .titulo6 {
+        .title6 {
           color: black;
           font-family:'Gochi Hand', cursive;
           font-size: 35px; 
@@ -555,37 +554,37 @@ header .logo {
               padding: 11px;
               width: 120px;
             }
-            .titulo1{
+            .title1{
               color: #FFDAB9;
               font-family:'Gochi Hand', cursive;
               font-size: 40px; 
               text-align: center;
             }
-    .titulo2 {
+    .title2 {
               color: #F36C1F;
               font-family:'Gochi Hand', cursive;
               font-size: 40px; 
               text-align: center;
             }
-            .titulo3{
+            .title3{
               color:  #FFDAB9;
               font-family:'Gochi Hand', cursive;
               font-size: 40px; 
               text-align: center;
             }
-            .titulo4{
+            .title4{
               color:  #FFDAB9;
               font-family:'Gochi Hand', cursive;
               font-size: 23px; 
               text-align: center;
             }
-            .titulo5 {
+            .title5 {
               color: #FFDAB9;
               font-family: 'Pacifico';
               font-size: 30px; 
               text-align: center;
             }
-            .titulo6 {
+            .title6 {
               color: black;
               font-family:'Gochi Hand', cursive;
               font-size: 35px; 
@@ -649,10 +648,10 @@ header .logo {
 
 
 
-.ocultar{
+.hide{
   display: none;
 }
-.mostrar{
+.show{
   display: block;
 }
 

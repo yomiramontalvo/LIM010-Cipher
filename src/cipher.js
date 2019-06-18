@@ -1,29 +1,29 @@
 
 window.cipher = {
   encode: (offset, string) => {
-    const enc = string.split('').map(c => {
-     let mayus = (c === c.toUpperCase()) ? true : false;
-      let valorEntero = c.toLowerCase().charCodeAt(0);
-      if (valorEntero >= 97 && valorEntero <= 122) {
-        let valorDesplazamiento = parseInt(offset);
+    const enc = string.split('').map(c => {     /*El string.split(''), split es un método, convierte mi string en un array(vector) de cadenas*/
+     let mayus = (c === c.toUpperCase()) ? true : false; /*El método map() crea un nuevo array, con los resultados de la función indicada*/
+      let valueWhole = c.toLowerCase().charCodeAt(0);
+      if (valueWhole >= 97 && valueWhole <= 122) {
+        let valueDisplacement = parseInt(offset);
         
-        if(valorDesplazamiento<27){
-          if (valorEntero + valorDesplazamiento > 122){
-          valorEntero = 97 + (valorEntero - 122) + valorDesplazamiento - 1;
+        if(valueDisplacement<27){
+          if (valueWhole + valueDisplacement > 122){
+          valueWhole = 97 + (valueWhole - 122) + valueDisplacement - 1;
           }
           else
-          valorEntero = valorEntero + valorDesplazamiento;
+          valueWhole = valueWhole + valueDisplacement;
         }
         else
         { 
-          valorDesplazamiento=valorDesplazamiento%26; 
-          if (valorEntero + valorDesplazamiento > 122){
-          valorEntero = 97 + (valorEntero - 122) + valorDesplazamiento - 1;
+          valueDisplacement=valueDisplacement%26; 
+          if (valueWhole + valueDisplacement > 122){
+          valueWhole = 97 + (valueWhole - 122) + valueDisplacement - 1;
           }else
-          valorEntero = valorEntero + valorDesplazamiento;
+          valueWhole = valueWhole + valueDisplacement;
         }
       }
-      let cifrado = String.fromCharCode(valorEntero);
+      let cifrado = String.fromCharCode(valueWhole);
       return mayus ? cifrado.toUpperCase() : cifrado;
     }).join('');
     return enc;
@@ -32,26 +32,26 @@ window.cipher = {
   decode: (offset, string) => {
     const dec = string.split('').map(c => {
       let mayus = (c === c.toUpperCase()) ? true : false;
-      let valorEntero = c.toLowerCase().charCodeAt(0);
-      if (valorEntero >= 97 && valorEntero <= 122) {
-        let valorDesplazamiento = parseInt(offset);
-        if(valorDesplazamiento<27){
-        if (valorEntero - valorDesplazamiento < 97){
-          valorEntero = 122 - (97-valorEntero) - valorDesplazamiento + 1;
+      let valueWhole = c.toLowerCase().charCodeAt(0);
+      if (valueWhole >= 97 && valueWhole <= 122) {
+        let valueDisplacement = parseInt(offset);
+        if(valueDisplacement<27){
+        if (valueWhole - valueDisplacement < 97){
+          valueWhole = 122 - (97-valueWhole) - valueDisplacement + 1;
         }
         else
-          valorEntero = valorEntero - valorDesplazamiento;
+          valueWhole = valueWhole - valueDisplacement;
       }
       else{
-        valorDesplazamiento=valorDesplazamiento%26;
-        if (valorEntero - valorDesplazamiento < 97){
-          valorEntero = 122 - (97-valorEntero) - valorDesplazamiento + 1;
+        valueDisplacement=valueDisplacement%26;
+        if (valueWhole - valueDisplacement < 97){
+          valueWhole = 122 - (97-valueWhole) - valueDisplacement + 1;
         }
         else
-          valorEntero = valorEntero - valorDesplazamiento;
+          valueWhole = valueWhole - valueDisplacement;
       }
     }
-      let descifrado = String.fromCharCode(valorEntero);
+      let descifrado = String.fromCharCode(valueWhole);
       return mayus ? descifrado.toUpperCase() : descifrado;
     }).join('');
     return dec;
