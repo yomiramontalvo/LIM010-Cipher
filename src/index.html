@@ -1,110 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
 <!-- Para el idioma -->
-
 <head>
   <meta charset="UTF-8"> <!-- Sirve para el header, como se vera -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="style.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Carme" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
-  <!--<link rel="icon" type="image.jpg" href=> -->
-  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Leckerli+One&display=swap" rel="stylesheet">
   <title>SecretFriend</title>
 </head>
-
 <body>
   <!-- Nombre y Logo -->
   <header>
     <div class="wrapper">
-      <div class="logo">
-        <h id="cabecera">¡Diviértete!</h>
-      </div>
+      <div class="logo" id="cabecera">¡Diviértete!</div>
     </div>
   </header>
   <main>
     <!-- screen 1 -->
-    <section id="boton1" class=" fondo1">
+    <section id="boton1" class="background1">
       <!-- para centrar contenido-->
-      <div class="title1">Ingresa la clave de tu comunidad </div><br />
+      <h1 class="title1">Ingresa la clave de tu comunidad </h1><br />
       <div class="wrapper3"> <input type="password" placeholder="contraseña" class="caja" id="password" /></div><br />
       <div class="wrapper2"><button type="button" class="button" id="btn">GO</button></div>
       <p id="intentos" class="escoger"></p>
     </section>
 
     <!-- screen 2 -->
-    <section id="boton2" class="fondo2 hide ">
-      <h1 class="title2">Ingresa tu nombre</h1><br>
+    <section id="boton2" class="background2 hide">
+       <h1 class="title2">Ingresa tu nombre</h1><br>
       <div class="wrapper3"><input type="text" placeholder="Nombre" class="caja" id="name" /></div><br>
       <div class="wrapper2"><button class="button" type="button" id="btn1">Next</button></div>
       <p id="noname" class="escoger"></p>
     </section>
     <!-- screen 3 -->
-    <section id="boton3" class=" fondo3  hide">
+    <section id="boton3" class=" background3  hide">
       <h1 class="title3">Ahora escoge una opción</h1><br>
-      <section class="escoger">
-        <div><button type="button" class="button" id="btn2">Descifra las pistas</button><br /></div>
-      </section>
+        <div class="escoger"><button type="button" class="button" id="btn2">Descifra las pistas</button><br /></div>
       <br>
-      <section class="escoger">
-        <div><button type="button" class="button" id="btn3">Oculta tus pistas</button><br /></div>
-      </section>
+        <div class="escoger"><button type="button" class="button" id="btn3">Oculta tus pistas</button><br /></div>
       <br>
     </section>
     <!-- screen 4 -->
-    <section id="boton4" class="fondo4 hide">
+    <section id="boton4" class="background4 hide">
       <h1 class="title4">Ingresa tu pista</h1>
-      <div class="wrapper3"><textarea type="text" class="caja" placeholder="mi pista" name="text"
+      <div class="wrapper3"><textarea class="caja" placeholder="mi pista" name="text"
           id="text"></textarea></div>
-      <h1 class="title4">Desliza y la hideás</h1>
+      <h1 class="title4">Desliza y la ocultarás</h1>
       <div class="wrapper3"><input type="range" min="0" max="25" step="1" value="1" id="displacement"
           name="displacement"></div>
       <h1 class="title4">Nueva pista oculta</h1>
-      <div class="wrapper3"><textarea type="text" class="caja" placeholder="pista cifrada" name="cifrado" id="cifrado1"
+      <div class="wrapper3"><textarea  class="caja" placeholder="pista cifrada" name="cifrado" id="cifrado1"
           disabled="disabled"></textarea></div><br />
       <div class="wrapper5"> <button type="button" class="button" id="btn4">Next</button><br></div>
       <div class="wrapper6"> <button type="button" class="button" id="btn9">Atrás</button><br></div><br />
       <p id="notextc" class="escoger"></p>
     </section>
     <!-- screen 5 -->
-    <section id="boton5" class=" fondo4 hide">
+    <section id="boton5" class=" background4 hide">
       <h1 class="title5">Tu nueva pista es:</h1>
       <h1 class="title6" id="nuevapista">....</h1>
-      <section>
         <div class="wrapper2"> <button type="button" class="button" id="btn5">volver a jugar</button><br></div><br>
         <div class="wrapper5"> <button type="button" class="button" id="btn12">Enviar</button><br></div>
         <div class="wrapper6"> <a href="https://www.google.com" class="button">Salir</a></div><br>
-      </section>
     </section>
     <!-- screen 6 -->
-    <section id="boton6" class="fondo4 hide">
+    <section id="boton6" class="background4 hide">
       <h1 class="title4">Ingresa la pista que encontraste</h1>
-      <div class="wrapper3"><textarea type="text" class="caja" placeholder="Pista de mi SF" name="text1"
+      <div class="wrapper3"><textarea class="caja" placeholder="Pista de mi SF" name="text1"
           id="text1"></textarea></div>
       <h1 class="title4">Desliza hasta descifrar</h1>
       <div class="wrapper3"><input type="range" min="0" max="25" step="1" value="1" id="displacement1"
           name="displacement1"></div>
       <h1 class="title4">Pista descifrada</h1>
-      <div class="wrapper3"><textarea type="text" class="caja" placeholder="pista descifrada" name="descifrado1"
+      <div class="wrapper3"><textarea  class="caja" placeholder="pista descifrada" name="descifrado1"
           id="descifrado1" disabled="disabled"></textarea></div><br>
       <div class="wrapper5"> <button type="button" class="button" id="btn6">Next</button><br></div>
       <div class="wrapper6"> <button type="button" class="button" id="btn10">Atrás</button><br></div><br />
       <p id="notextd" class="escoger"></p>
     </section>
     <!-- screen 7 -->
-    <section id="boton7" class=" fondo4  hide">
+    <section id="boton7" class=" background4  hide">
       <h1 class="title5">La pista descifrada es:</h1>
       <h1 class="title6" id="pistadescifrada">....</h1>
-      <section>
         <div class="wrapper2"> <button type="button" class="button" id="btn7">volver a jugar</button></div>
         <div class="wrapper2"> <a href="https://www.google.com" class="button">Salir</a><br></div>
-      </section>
     </section>
     <!-- screen 8 -->
-    <section id="boton8" class="  fondo1  hide">
+    <section id="boton8" class="  background1  hide">
       <!-- para centrar contenido-->
       <h1 class="title1 ">UPS... </h1>
       <h1 class="title4 ">Agotaste los 3 intentos...</h1>
