@@ -8,7 +8,6 @@ let screen6 = document.getElementById('boton6');
 let screen7 = document.getElementById('boton7');
 let screen8 = document.getElementById('boton8');
 
-
 const hide1 = () => {
   screen1.classList.remove('show');
   screen2.classList.remove('show');
@@ -76,6 +75,10 @@ input.addEventListener("keyup", function (event) {
 btn.addEventListener('click', () => {
   let n = password.value;
   if (n == "LABORATORIA") {
+   document.getElementById('body').classList.add('body2');
+   document.getElementById('body').classList.remove('body1');
+   document.getElementById('cabecera').classList.add('logo1');
+   document.getElementById('cabecera').classList.remove('logo');
     name.value = "";
     text1.value = "";
     displacement1.value = 1;
